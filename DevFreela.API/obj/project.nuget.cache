@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "NWD2/YmOHF9HAgJCHeOy4jwH9+41TLlNnxUZBSX09lQ5B4kBhSfZT/VGNEjZD4Cg7qcTGoJ9Usw/0yMwJgOPqQ==",
+  "dgSpecHash": "ZsA1BcVW7o20HBOWhSFvevMR+dN1De87yRa5O38Mub8ekS9M3/rzVxz8rNQXMZul0OkrHF+nor+wGHf7UziyWg==",
   "success": true,
   "projectFilePath": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\dotnet-expert-luis-dev\\projects\\DevFreela\\DevFreela\\DevFreela\\DevFreela.API\\DevFreela.API.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\thiag\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
+    "C:\\Users\\thiag\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.6.2\\swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
+    "C:\\Users\\thiag\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.6.2\\swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
+    "C:\\Users\\thiag\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.6.2\\swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512"
+  ],
   "logs": []
 }
