@@ -320,6 +320,15 @@
           }
         }
       },
+      "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/_._": {}
+        }
+      },
       "Microsoft.Extensions.Caching.Abstractions/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -730,6 +739,18 @@
         },
         "runtime": {
           "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Swashbuckle.AspNetCore/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.ApiDescription.Server": "3.0.0",
+          "Swashbuckle.AspNetCore.Swagger": "5.6.3",
+          "Swashbuckle.AspNetCore.SwaggerGen": "5.6.3",
+          "Swashbuckle.AspNetCore.SwaggerUI": "5.6.3"
+        },
+        "build": {
+          "build/_._": {}
         }
       },
       "Swashbuckle.AspNetCore.Swagger/6.6.2": {
@@ -1973,6 +1994,23 @@
         "runtime": {
           "bin/placeholder/DevFreela.Infrastructure.dll": {}
         }
+      },
+      "DevFreela.Payments.API/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "RabbitMQ.Client": "6.2.1",
+          "Swashbuckle.AspNetCore": "5.6.3"
+        },
+        "compile": {
+          "bin/placeholder/DevFreela.Payments.API.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DevFreela.Payments.API.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -2353,6 +2391,33 @@
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.SqlServer.xml",
         "microsoft.entityframeworkcore.sqlserver.5.0.3.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlserver.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
+      "sha512": "LH4OE/76F6sOCslif7+Xh3fS/wUUrE5ryeXAMcoCnuwOQGT5Smw0p57IgDh/pHgHaGz/e+AmEQb7pRgb++wt0w==",
+      "type": "package",
+      "path": "microsoft.extensions.apidescription.server/3.0.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Microsoft.Extensions.ApiDescription.Server.props",
+        "build/Microsoft.Extensions.ApiDescription.Server.targets",
+        "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.props",
+        "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets",
+        "microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+        "microsoft.extensions.apidescription.server.nuspec",
+        "tools/Newtonsoft.Json.dll",
+        "tools/dotnet-getdocument.deps.json",
+        "tools/dotnet-getdocument.dll",
+        "tools/dotnet-getdocument.runtimeconfig.json",
+        "tools/net461-x86/GetDocument.Insider.exe",
+        "tools/net461-x86/GetDocument.Insider.exe.config",
+        "tools/net461/GetDocument.Insider.exe",
+        "tools/net461/GetDocument.Insider.exe.config",
+        "tools/netcoreapp2.1/GetDocument.Insider.deps.json",
+        "tools/netcoreapp2.1/GetDocument.Insider.dll",
+        "tools/netcoreapp2.1/GetDocument.Insider.runtimeconfig.json"
       ]
     },
     "Microsoft.Extensions.Caching.Abstractions/5.0.0": {
@@ -2980,6 +3045,18 @@
         "lib/netstandard1.0/_._",
         "runtime.native.system.4.3.0.nupkg.sha512",
         "runtime.native.system.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore/5.6.3": {
+      "sha512": "UkL9GU0mfaA+7RwYjEaBFvAzL8qNQhNqAeV5uaWUu/Z+fVgvK9FHkGCpTXBqSQeIHuZaIElzxnLDdIqGzuCnVg==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore/5.6.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Swashbuckle.AspNetCore.props",
+        "swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+        "swashbuckle.aspnetcore.nuspec"
       ]
     },
     "Swashbuckle.AspNetCore.Swagger/6.6.2": {
@@ -6410,6 +6487,11 @@
       "type": "project",
       "path": "../DevFreela.Infrastructure/DevFreela.Infrastructure.csproj",
       "msbuildProject": "../DevFreela.Infrastructure/DevFreela.Infrastructure.csproj"
+    },
+    "DevFreela.Payments.API/1.0.0": {
+      "type": "project",
+      "path": "../DevFreela.Payments.API/DevFreela.Payments.API.csproj",
+      "msbuildProject": "../DevFreela.Payments.API/DevFreela.Payments.API.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6417,6 +6499,7 @@
       "DevFreela.Application >= 1.0.0",
       "DevFreela.Core >= 1.0.0",
       "DevFreela.Infrastructure >= 1.0.0",
+      "DevFreela.Payments.API >= 1.0.0",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 9.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 5.0.17",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.3",
@@ -6468,6 +6551,9 @@
             },
             "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\dotnet-expert-luis-dev\\projects\\DevFreela\\DevFreela\\DevFreela\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\dotnet-expert-luis-dev\\projects\\DevFreela\\DevFreela\\DevFreela\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj"
+            },
+            "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\dotnet-expert-luis-dev\\projects\\DevFreela\\DevFreela\\DevFreela\\DevFreela.Payments.API\\DevFreela.Payments.API.csproj": {
+              "projectPath": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\dotnet-expert-luis-dev\\projects\\DevFreela\\DevFreela\\DevFreela\\DevFreela.Payments.API\\DevFreela.Payments.API.csproj"
             }
           }
         }

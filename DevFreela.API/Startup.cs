@@ -1,3 +1,4 @@
+using DevFreela.API.Consumers;
 using DevFreela.API.Filters;
 using DevFreela.Application.Commands.CreateProject;
 using DevFreela.Application.Validators;
@@ -35,6 +36,8 @@ namespace DevFreela.API
             services.AddRazorPages();
 
             services.AddHttpClient();
+
+            services.AddHostedService<ProcessPaymentConsumer>();
 ;
             var connectionString = Configuration.GetConnectionString("DevFreelaCs");
 
