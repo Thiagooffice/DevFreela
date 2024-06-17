@@ -34,6 +34,8 @@ namespace DevFreela.API
         {
             services.AddRazorPages();
 
+            services.AddHttpClient();
+;
             var connectionString = Configuration.GetConnectionString("DevFreelaCs");
 
             services.AddDbContext<DevFreelaDbContext>(options => options.UseInMemoryDatabase("DevFreela"));
