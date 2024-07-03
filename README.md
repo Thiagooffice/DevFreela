@@ -48,6 +48,8 @@ Cliente. Adicionar comentários para um serviço de Freelance. Definir, iniciar 
 - Autenticação e Autorização com JWT
 - Mensageria RabbitMQ e Microsserviços
 - Azure DevOps
+- Filtragem de Dados
+- Paginação de Dados
 ## Swagger
 
 Ferramenta que simplifica o desenvolvimento de APIs, permitindo entre outras funcionalidades, a documentar e testar APIs. Ele consegue gerar uma interface gráfica contendo todos os pontos de acesso (Endpoints) da API, permitindo realizar requisições diretamente em sua interface.
